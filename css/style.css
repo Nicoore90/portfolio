@@ -6,3 +6,30 @@
 img {
     width: 250px;
 }
+
+.proyect {
+    display: grid;
+    grid-template-areas: "img title"
+                          "img text";
+    border: 1px solid black;
+    margin: 50px;
+    margin-left: 0px;
+}
+
+.proyect__image {
+    grid-area: img;
+}
+
+.proyect__title {
+    grid-area: title;
+}
+
+.proyect__text {
+    grid-area: text;
+    display: none;
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: end;
+}
