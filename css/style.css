@@ -3,8 +3,34 @@
     padding: 0px;
 }
 
+body {
+    background-image: linear-gradient(to bottom, #ffffff,  #cccccc);
+}
+
+#logo {
+    width: 80px;
+}
+
 img {
     width: 250px;
+}
+
+#presentacion {
+    display: grid;
+    grid-template-areas: "title  img"
+                         "subtitle img ";
+    align-content: center;
+    border: rgb(211, 30, 30) 4px solid;
+    border-radius: 10px;
+}
+
+.presentacion__titulo {
+    margin-top: 50px;
+}
+
+#proyectos {
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .proyect {
@@ -32,4 +58,13 @@ img {
 #navbarNav {
     display: flex;
     justify-content: end;
+}
+
+#contacto {
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 30px;
 }
