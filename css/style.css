@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    width: 300px;
+    width: 100%;
 }
 
 #presentacion {
@@ -54,7 +54,6 @@ img {
 
 .proyect__text {
     grid-area: text;
-    display: none;
     font-size: small;
 }
 
@@ -72,6 +71,15 @@ i {
     font-size: 30px;
 }
 
+#mail {
+    display: flex;
+}
+
+#mailAdress {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
 @media screen and (min-width:600px) {
     .proyect__title {
         font-size: 1.5em;
@@ -86,5 +94,9 @@ i {
         grid-template-areas: "img title"
                               "img text";
         
+    }
+
+    img {
+        width: 50%;
     }
 }

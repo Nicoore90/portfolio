@@ -1,14 +1,14 @@
-$("#houseImage").hover(function () {
-    $("#houseText").slideToggle()
-}, function () {
-    $("#houseText").fadeOut()
-})
+// $("#houseImage").hover(function () {
+//     $("#houseText").slideToggle()
+// }, function () {
+//     $("#houseText").fadeOut()
+// })
 
-$("#houseTitle").animate(
-    "margin-left : 0px;")
+// $("#houseTitle").animate(
+//     "margin-left : 0px;")
 
-$("#enciclopediaImage").hover(function () {
-    $("#enciclopediaText").slideToggle()
- }, function () {
-    $("#enciclopediaText").fadeOut()
-})
+// $("#enciclopediaImage").hover(function () {
+//     $("#enciclopediaText").slideToggle()
+//  }, function () {
+//     $("#enciclopediaText").fadeOut()
+// })
