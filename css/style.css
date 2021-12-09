@@ -7,15 +7,18 @@ body {
     background-image: linear-gradient(to bottom, #ffffff,  #cccccc);
 }
 
+#logo {
+    height: 80px;
+    width: 80px;
+}
+
 img {
     width: 500px;
     height: 500px;
 }
 
 #presentacion {
-    display: grid;
-    grid-template-areas: "title  img"
-                         "subtitle img ";
+    display: flex;
     align-content: center;
 }
 
@@ -26,35 +29,35 @@ img {
     margin-top: 50px;
 }
 
+#fotoPrincipal {
+    display: none;
+}
+
 #proyectos {
     margin-top: 200px;
     margin-bottom: 200px;
 }
 
 .proyect {
-    display: grid;
-    grid-template-areas: "img img"
-                          "title text";
+    display: flex;
+    flex-direction: column;
     margin: 50px;
     margin-left: 0px;
     padding: 50px;
 }
 
 .proyect__image {
-    grid-area: img;
     width: 80%;
     height: 100%;
     margin-right: 20px;
 }
 
 .proyect__title {
-    grid-area: title;
     font-size: small;
     margin-right: 50px;
 }
 
 .proyect__text {
-    grid-area: text;
     font-size: small;
 }
 
@@ -82,18 +85,40 @@ i {
 }
 
 @media screen and (min-width:600px) {
+    #presentacion {
+        display: grid;
+        grid-template-areas: "title  img"
+                             "subtitle img ";
+        align-content: center;
+    }
+
+    #fotoPrincipal {
+        display: block;
+    }
+
+    #logo {
+        display: none;
+    }
+
     .proyect__title {
         font-size: 1.5em;
+        grid-area: title;
     }
 
     .proyect__text {
         font-size: 1em;
+        grid-area: des;
     }
 
     .proyect {
         display: grid;
         grid-template-areas: "img title"
-                              "img text";
+                              "img des";
         
     }
+
+    .proyect__image {
+        grid-area: img;
+    }
+
 }
