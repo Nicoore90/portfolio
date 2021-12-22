@@ -33,6 +33,15 @@ img {
     display: none;
 }
 
+#iconos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#iconos i {
+    font-size: 3W0px;
+}
+
 #proyectos {
     margin-top: 200px;
     margin-bottom: 200px;
@@ -98,6 +107,10 @@ i {
 
     #logo {
         display: none;
+    }
+
+    #iconos i {
+        font-size: 100px;
     }
 
     .proyect__title {
