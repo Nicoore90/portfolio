@@ -18,45 +18,54 @@ img {
 }
 
 #presentacion {
-    display: flex;
+    display: grid;
+    grid-template-areas: "title  img"
+                         "subtitle img ";
     align-content: center;
 }
 
 #titulos {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .presentacion__titulo {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 #fotoPrincipal {
-    display: none;
+    height: 100px;
+    width: 100px;
 }
 
 #infoPersonal {
     margin-left: 10px;
+    align-items: center;
+}
+
+#infoPersonal p {
+    margin: 50px 0px 50px 0px
 }
 
 #iconos {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 #iconos i {
-    font-size: 3W0px;
+    font-size: 30px;
 }
 
 #proyectos {
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 00px;
 }
 
 .proyect {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 25px;
     margin-left: 0px;
-    padding: 50px;
+    padding: 25px;
 }
 
 .proyect__image {
@@ -106,7 +115,8 @@ i {
     }
 
     #fotoPrincipal {
-        display: block;
+        height: auto;
+        width: auto;
     }
 
     #logo {
