@@ -16,35 +16,43 @@ img {
     width: 500px;
     height: 500px;
 }
-
+/*
 #presentacion {
     display: grid;
     grid-template-areas: "title  img"
                          "subtitle img ";
     align-content: center;
 }
+*/
 
 #titulos {
     padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .presentacion__titulo {
     margin-top: 25px;
 }
 
+.presentacion__subtitulo {
+    font-size: 20px;
+}
+
 #fotoPrincipal {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
 }
 
 #infoPersonal {
     margin-left: 10px;
     align-items: center;
 }
-
+/*
 #infoPersonal p {
     margin: 50px 0px 50px 0px
 }
-
+*/
 #iconos {
     display: flex;
     justify-content: space-around;
@@ -107,16 +115,26 @@ i {
 }
 
 @media screen and (min-width:600px) {
+    /*
     #presentacion {
         display: grid;
         grid-template-areas: "title  img"
                              "subtitle img ";
         align-content: center;
     }
+    */
+
+    #titulos {
+        display: flex;
+    }
 
     #fotoPrincipal {
         height: auto;
         width: auto;
+    }
+
+    .presentacion__subtitulo {
+        font-size: 30px;
     }
 
     #logo {
